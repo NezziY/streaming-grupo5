@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproducción de Video</title>
+    <title>Series</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -34,19 +34,27 @@
         </div>
     </nav>
     <div class="container mt-5">
-        <h1 class="mb-4">Reproducción de Video</h1>
-        <video id="videoPlayer" class="w-100" controls>
-            <source id="videoSource" src="" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
-        <div class="mt-3">
-            <h2 id="videoTitle">Título del Video</h2>
-            <p id="videoDescription">Descripción del Video</p>
+        <h1 class="mb-4">Series</h1>
+        <div class="row">
+            <!-- Reemplaza con tus series -->
+            <div class="col-md-4">
+                <div class="card">
+                    <video class="card-img-top" controls>
+                        <source src="videos/serie1.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">Serie 1</h5>
+                        <a href="video.html?video=serie1.mp4" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Más series aquí -->
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
