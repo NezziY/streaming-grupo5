@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de Streaming</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,13 +42,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="https://via.placeholder.com/800x400" alt="First slide">
+                <img class="d-block w-100" src="https://i.pinimg.com/736x/66/24/96/6624960f0062bd8b8845037c6776277c--maleficent--maleficent-movie.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://via.placeholder.com/800x400" alt="Second slide">
+                <img class="d-block w-100" src="https://www.ecartelera.com/carteles/10200/10231/014.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://via.placeholder.com/800x400" alt="Third slide">
+                <img class="d-block w-100" src="https://www.movienco.co.uk/carteles/10800/10893/001.jpg" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -61,28 +61,52 @@
         </a>
     </div>
 
-    <div class="container mt-5">
-        <h1 class="mb-4">Bienvenido a la Plataforma de Streaming</h1>
-        <h2 class="mb-4">Videos Destacados</h2>
+    <div class="container my-5">
+        <h2 class="mb-4">Recomendados</h2>
         <div class="row">
             <!-- Reemplaza con tus videos destacados -->
             <div class="col-md-4">
                 <div class="card">
-                    <video class="card-img-top" controls>
-                        <source src="videos/video1.mp4" type="video/mp4">
-                        Tu navegador no soporta la reproducción de videos.
-                    </video>
                     <div class="card-body">
-                        <h5 class="card-title">Video 1</h5>
-                        <a href="video.html?video=video1.mp4" class="btn btn-primary">Ver</a>
+                        <h5 class="card-title">Godzilla x Kong</h5>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qqrpMRDuPfc?si=reD8KN508LPF6JuB" allowfullscreen></iframe>
+                        </div>
+                        <a href="video.html?video=video1.mp4" class="btn btn-primary mt-2">Ver</a>
                     </div>
                 </div>
             </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuevo Reino</h5>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DDWWwEiWHJw" allowfullscreen></iframe>
+                        </div>
+                        <a href="video.html?video=video1.mp4" class="btn btn-primary mt-2">Ver</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Midnight Special</h5>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8UU_CC81aGM" allowfullscreen></iframe>
+                        </div>
+                        <a href="video.html?video=video1.mp4" class="btn btn-primary mt-2">Ver</a>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Más videos aquí -->
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
