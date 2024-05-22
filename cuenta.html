@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Cuenta</title>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Streaming</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="series.html">Series</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="peliculas.html">Películas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="favoritos.html">Favoritos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cuenta.html">Mi Cuenta</a>
-                </li>
-            </ul>
-        </div>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex">
+      <a class="navbar-brand" href="index.html">Streaming</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="series.html">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="peliculas.html">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favoritos.html">Favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cuenta.html">Mi Cuenta</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="container mt-5">
-        <h1 class="mb-4">Mi Cuenta</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <form id="miFormulario" class="needs-validation" novalidate>
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <h5 id="nombreUsuario"></h5>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
-                        <div class="invalid-feedback">
-                            Por favor, ingrese su nombre.
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico:</label>
-                        <h5 id="mailUsuario"></h5>
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
-                        <div class="invalid-feedback">
-                            Por favor, ingrese un correo electrónico válido.
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                </form>
-                
-                
-                
+      <h1 class="mb-4">Mi Cuenta</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="miFormulario" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <h5 id="nombreUsuario"></h5>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Ingrese su nombre"
+                required
+              />
+              <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
             </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico:</label>
+              <h5 id="mailUsuario"></h5>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Ingrese su correo electrónico"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, ingrese un correo electrónico válido.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Guardar Cambios
+            </button>
+          </form>
+        </div>
 
-            <!-- CAMBIO DE CONTRASEÑA -->
-            <!-- <div class="col-md-6">
+        <!-- CAMBIO DE CONTRASEÑA -->
+        <!-- <div class="col-md-6">
                 <h2>Cambiar Contraseña</h2>
                 <form>
                     <div class="form-group">
@@ -87,12 +111,11 @@
                     <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
                 </form>
             </div> -->
-        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
