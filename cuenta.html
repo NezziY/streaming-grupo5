@@ -55,6 +55,8 @@
         </ul>
       </div>
     </nav>
+
+    <!-- 
     <div class="container mt-5">
       <h1 class="mb-4">Mi Cuenta</h1>
       <div class="row">
@@ -93,7 +95,7 @@
         </div>
 
         <!-- CAMBIO DE CONTRASEÑA -->
-        <!-- <div class="col-md-6">
+    <!-- <div class="col-md-6">
                 <h2>Cambiar Contraseña</h2>
                 <form>
                     <div class="form-group">
@@ -110,9 +112,93 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Cambiar Contraseña</button>
                 </form>
-            </div> -->
+            </div> 
       </div>
     </div>
+  -->
+
+    <section class="vh-100">
+      <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-500">
+          <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            <form>
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input
+                  type="email"
+                  id="form1Example13"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="form1Example13">Email</label>
+              </div>
+
+              <!-- Password input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="form1Example23"
+                  class="form-control form-control-lg"
+                />
+                <label class="form-label" for="form1Example23">Password</label>
+              </div>
+
+              <div
+                class="d-flex justify-content-around align-items-center mb-4"
+              >
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="form1Example3"
+                    checked
+                  />
+                  <label class="form-check-label" for="form1Example3">
+                    Recordarme
+                  </label>
+                </div>
+                <a href="#!">Recuperar contraseña?</a>
+              </div>
+
+              <!-- Submit button -->
+              <button
+                type="submit"
+                data-mdb-button-init
+                data-mdb-ripple-init
+                class="btn btn-primary btn-lg btn-block"
+              >
+                Iniciar sesión
+              </button>
+
+              <div class="divider d-flex align-items-center my-4">
+                <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+              </div>
+
+              <a
+                data-mdb-ripple-init
+                class="btn btn-primary btn-lg btn-block"
+                style="background-color: #3b5998"
+                href="#!"
+                role="button"
+              >
+                <i class="fab fa-facebook-f me-2"></i>Continar con Facebook
+              </a>
+              <a
+                data-mdb-ripple-init
+                class="btn btn-primary btn-lg btn-block"
+                style="background-color: #f3bc46"
+                href="#!"
+                role="button"
+              >
+                <i class="fab fa-twitter me-2"></i>Continuar con Google</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
